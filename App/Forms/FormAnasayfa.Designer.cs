@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelTitle = new System.Windows.Forms.Label();
             this.listBoxUniteler = new System.Windows.Forms.ListBox();
             this.buttonYeniUniteEkle = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.İsim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cinsiyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Yaş = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHastaListesi)).BeginInit();
             this.SuspendLayout();
@@ -145,5 +147,6 @@
         private DataGridViewTextBoxColumn İsim;
         private DataGridViewTextBoxColumn Cinsiyet;
         private DataGridViewTextBoxColumn Yaş;
+        private System.Windows.Forms.Timer timer1;
     }
 }
