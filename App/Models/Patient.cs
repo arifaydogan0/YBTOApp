@@ -31,12 +31,14 @@ namespace App.Models
         public Temperature? CurrentTemperature { get; set; }
         public BloodPressure? CurrentBloodPressure { get; set; }
 
+        public DateTime sonNormalOkunduguZaman;
         public bool IsNormal
         {
             get
             {
                 if (CurrentPulse?.StatusIndex != 0 || CurrentBloodPressure?.StatusIndex != 0 || CurrentTemperature?.StatusIndex != 0 || CurrentSaturation?.StatusIndex != 0)
                     return false;
+                sonNormalOkunduguZaman = DateTime.Now;
                 return true;
             }
         }

@@ -31,7 +31,7 @@ namespace App.Models.MedicalDatas
 
         public override string ToString()
         {
-            return $@"{SistolikValue} mmHg / {DiastolikValue} mmHg";
+            return $@"{SistolikValue} mmHg - {DiastolikValue} mmHg";
         }
     }
 }

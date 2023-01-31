@@ -18,7 +18,7 @@ namespace App.Models
                 BirthDate = new(1985, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
-                CurrentPulse = new() {PulseValue = 67},
+                CurrentPulse = new() {PulseValue = 85},
                 CurrentSaturation = new(){SaturationValue = 0.97}
             },
             new()
@@ -30,7 +30,7 @@ namespace App.Models
                 BirthDate = new(1983, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
-                CurrentPulse = new() {PulseValue = 67},
+                CurrentPulse = new() {PulseValue = 87},
                 CurrentSaturation = new(){SaturationValue = 0.97}
             },
             new()
@@ -54,7 +54,7 @@ namespace App.Models
                 BirthDate = new(1961, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
-                CurrentPulse = new() {PulseValue = 67},
+                CurrentPulse = new() {PulseValue = 69},
                 CurrentSaturation = new(){SaturationValue = 0.97}
             },
             new()
@@ -102,7 +102,7 @@ namespace App.Models
                 BirthDate = new(1969, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
-                CurrentPulse = new() {PulseValue = 67},
+                CurrentPulse = new() {PulseValue = 77},
                 CurrentSaturation = new(){SaturationValue = 0.96}
             },
             new()
@@ -246,7 +246,7 @@ namespace App.Models
                 BirthDate = new(1952, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 119, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
-                CurrentPulse = new() {PulseValue = 132},
+                CurrentPulse = new() {PulseValue = 99},
                 CurrentSaturation = new(){SaturationValue = 0.97}
             },
             new()

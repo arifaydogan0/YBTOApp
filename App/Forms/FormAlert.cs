@@ -14,13 +14,15 @@ namespace App.Forms
 {
     public partial class FormAlert : Form
     {
+        private bool autoOpen;
         Patient Patient;
         private int pI;
-        public FormAlert(int patientIndex)
+        public FormAlert(int patientIndex, bool autoOpen = true)
         {
             InitializeComponent();
             Patient = Test.hastalar[patientIndex];
             pI = patientIndex;
+            this.autoOpen = autoOpen;
         }
 
         private void FormAlert_Load(object sender, EventArgs e)
@@ -42,6 +44,19 @@ namespace App.Forms
             labelTansiyon.ForeColor = Patient.CurrentBloodPressure.StatusIndex == 0 ? Color.Green : Color.Red;
             labelSaturasyon.Text = Patient.CurrentSaturation?.ToString() + "  " + Saturation.Statuses[Patient.CurrentSaturation.StatusIndex];
             labelSaturasyon.ForeColor = Patient.CurrentSaturation.StatusIndex == 0 ? Color.Green : Color.Red;
+
+            if(Patient.IsNormal && autoOpen)
+                this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FormEkg().ShowDialog();
+        }
+
+        private void FormAlert_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormAnasayfa.acilIndexler.Remove(pI);
         }
     }
 }
