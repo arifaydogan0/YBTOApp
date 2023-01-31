@@ -1,4 +1,9 @@
 ### MARMARA ÜNİVERSİTESİ MÜHENDİSLİK YÖNETİMİ DÖNEM PROJESİ İÇİN GELİŞTİRİLMİŞ HASTANE OTOMASYON PROJESİ YAZILIMININ KAYNAK KODLARIDIR.
+  Sağlık klinikleri ve hastanelerin en kritik alanları olan yoğun bakım ve acil gibi servislerde kullanılabilecek hasta durum takibi ile ilgili otomasyon projesinin kaynak kodlarıdır. 
+  
+  Uygulama çalışırken bir ana ekranda seçili olan serviste takibi yapılan hastaların medikal dataları anlık olarak güncellenir. Personelin hastaya özel ayarladığı kritik eşik değerleri aşılırsa bir uyarı veya acil çağrı penceresi açılarak uyarı verir. Bu uyarı ekranında hastaya ait detaylı bilgiler yer alır ve verilerin davranışı grafiklerle modellenebilir. 
+  
+  Sağlık personelinin organizasyonunu kolaylaştıran bu proje özellikle afet,salgın, zincirleme kazalar gibi ani gelişen durumlarda personel yetersizlik ve plansızlığı sebebiyle artan can kaybını azaltmayı amaçlamıştır.
 
 
 #
