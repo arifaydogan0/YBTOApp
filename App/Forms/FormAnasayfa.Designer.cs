@@ -85,7 +85,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(222, 70);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(964, 599);
+            this.groupBox1.Size = new System.Drawing.Size(1068, 599);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hasta Listesi";
@@ -98,7 +98,7 @@
             this.dataGridViewHastaListesi.Name = "dataGridViewHastaListesi";
             this.dataGridViewHastaListesi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.dataGridViewHastaListesi.RowTemplate.Height = 25;
-            this.dataGridViewHastaListesi.Size = new System.Drawing.Size(958, 568);
+            this.dataGridViewHastaListesi.Size = new System.Drawing.Size(1062, 568);
             this.dataGridViewHastaListesi.TabIndex = 0;
             // 
             // İsim
