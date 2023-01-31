@@ -52,7 +52,7 @@ namespace App.Models
                 LastName = "Sunalı",
                 BloodGroup = "A rh+",
                 Gender = "Erkek",
-                BirthDate = new(19752, 11, 21),
+                BirthDate = new(1952, 11, 21),
                 CurrentBloodPressure = new(){DiastolikValue = 118, SistolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
                 CurrentPulse = new() {PulseValue = 132},

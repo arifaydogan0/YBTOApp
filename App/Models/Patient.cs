@@ -7,6 +7,7 @@ namespace App.Models
 {
     internal class Patient
     {
+        public Patient() { }
         public Patient(string name, string lastName, DateTime birthDate, string gender, string bloodGroup)
         {
             Name = name;

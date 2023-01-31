@@ -41,6 +41,7 @@ namespace App.Forms
                 Test.hastalar[i].CurrentSaturation = new() { SaturationValue = (double)random.Next(93, 100) / 100 };
                 Test.hastalar[i].CurrentTemperature = new() { TemperatureValue = random.NextDouble() + random.Next(32, 39) };
             }
+            dataGridViewHastaListesi.DataSource = Test.hastalar;
         }
     }
 }
