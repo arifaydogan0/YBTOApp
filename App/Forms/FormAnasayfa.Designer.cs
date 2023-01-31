@@ -127,8 +127,10 @@
             this.dataGridViewHastaListesi.Name = "dataGridViewHastaListesi";
             this.dataGridViewHastaListesi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.dataGridViewHastaListesi.RowTemplate.Height = 25;
+            this.dataGridViewHastaListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewHastaListesi.Size = new System.Drawing.Size(1062, 568);
             this.dataGridViewHastaListesi.TabIndex = 0;
+            this.dataGridViewHastaListesi.DoubleClick += new System.EventHandler(this.dataGridViewHastaListesi_DoubleClick);
             // 
             // Column1
             // 

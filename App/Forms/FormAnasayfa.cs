@@ -28,7 +28,7 @@ namespace App.Forms
 
         private void buttonYeniUniteEkle_Click(object sender, EventArgs e)
         {
-            new FormAlert().ShowDialog();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -87,6 +87,12 @@ namespace App.Forms
                 dataGridViewHastaListesi.Rows[i].Cells[7].Style.ForeColor = hasta.IsNormal ? Color.Green : Color.Red;
             }
             //dataGridViewHastaListesi.Refresh();
+        }
+
+        private void dataGridViewHastaListesi_DoubleClick(object sender, EventArgs e)
+        {
+            int index = dataGridViewHastaListesi.SelectedRows[0].Index;
+            new FormAlert(index).ShowDialog();
         }
     }
 }
