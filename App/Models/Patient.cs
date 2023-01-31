@@ -22,7 +22,6 @@ namespace App.Models
         public DateTime BirthDate { get; set; }
         public string Gender { get; set; }
         public string BloodGroup { get; set; }
-
         //public EKG? CurrentEKG { get; set; }
         //public EEG? CurrentEEG { get; set; }
         //public EOG? CurrentEOG { get; set; }
@@ -31,5 +30,15 @@ namespace App.Models
         public Saturation? CurrentSaturation { get; set; }
         public Temperature? CurrentTemperature { get; set; }
         public BloodPressure? CurrentBloodPressure { get; set; }
+
+        public bool IsNormal
+        {
+            get
+            {
+                if (CurrentPulse?.StatusIndex != 0 || CurrentBloodPressure?.StatusIndex != 0 || CurrentTemperature?.StatusIndex != 0 || CurrentSaturation?.StatusIndex != 0)
+                    return false;
+                return true;
+            }
+        }
     }
 }

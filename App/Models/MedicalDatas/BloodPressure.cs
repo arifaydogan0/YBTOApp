@@ -8,14 +8,24 @@ namespace App.Models.MedicalDatas
     /// </summary>
     internal class BloodPressure
     {
+        private int diastolicValue;
+        private int sistolicValue;
         public static List<string> Statuses = new List<string>
         {
             "Normal",
             "Hipertansiyon",
             "Hipotansiyon"
         };
-        public int SistolikValue { get; set; }
-        public int DiastolikValue { get; set; }
+        public int SistolikValue
+        {
+            get => sistolicValue;
+            set => sistolicValue = (value > 100 && value < 145) ? value : sistolicValue;
+        }
+        public int DiastolikValue
+        {
+            get => diastolicValue;
+            set => diastolicValue = (value > 55 && value < 95) ? value : diastolicValue;
+        }
         public int StatusIndex => SistolikValue > 140 ? 1 : SistolikValue < 100 ? 2 : 0;
         public bool Alert => StatusIndex != 0;
 

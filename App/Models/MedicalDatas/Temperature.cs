@@ -11,13 +11,19 @@ namespace App.Models.MedicalDatas
     /// </summary>
     internal class Temperature
     {
+        private double temp;
         public static List<string> Statuses = new List<string>
         {
             "Normal",
             "Yüksek Ateş",
             "Düşük Ateş"
         };
-        public double TemperatureValue { get; set; }
+
+        public double TemperatureValue
+        {
+            get => temp;
+            set => temp = value < 44 && value > 32 ? value : temp;
+        }
         public int StatusIndex => TemperatureValue > 38 ? 1 : TemperatureValue < 35 ? 2 : 0;
         public bool Alert => StatusIndex != 0;
 
