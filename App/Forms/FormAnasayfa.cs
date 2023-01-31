@@ -13,6 +13,7 @@ namespace App.Forms
 {
     public partial class FormAnasayfa : Form
     {
+        private Random random = new();
         public FormAnasayfa()
         {
             InitializeComponent();
@@ -30,5 +31,17 @@ namespace App.Forms
         {
             new FormAlert().ShowDialog();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Test.hastalar.Count; i++)
+            {
+                Test.hastalar[i].CurrentPulse = new() { PulseValue = random.Next(60, 140) };
+                Test.hastalar[i].CurrentBloodPressure = new() { DiastolikValue = random.Next(100, 135), SistolikValue = random.Next(66, 93) };
+                Test.hastalar[i].CurrentSaturation = new() { SaturationValue = (double)random.Next(93, 100) / 100 };
+                Test.hastalar[i].CurrentTemperature = new() { TemperatureValue = random.NextDouble() + random.Next(32, 39) };
+            }
+        }
     }
 }
+

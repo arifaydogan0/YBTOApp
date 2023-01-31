@@ -23,8 +23,10 @@ namespace App.Forms
         {
             Patient patient = Test.hastalar[3];
             label1.Text = patient.Name + " " + patient.LastName;
-            label2.Text = patient.CurrentPulse.ToString();
-            label3.Text = Pulse.Statuses[patient.CurrentPulse.StatusIndex];
+            label2.Text = patient.CurrentPulse?.ToString();
+            if (label3 != null)
+                if (patient.CurrentPulse != null)
+                    label3.Text = Pulse.Statuses[patient.CurrentPulse.StatusIndex];
         }
     }
 }

@@ -118,6 +118,11 @@
             this.Yaş.HeaderText = "Yaş";
             this.Yaş.Name = "Yaş";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
