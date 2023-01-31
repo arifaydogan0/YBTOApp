@@ -25,7 +25,7 @@ namespace App.Models.MedicalDatas
 
         public override string ToString()
         {
-            return $"%{SaturationValue * 100} SpO2";
+            return $"%{Math.Round(SaturationValue * 100)} SpO2";
         }
     }
 }

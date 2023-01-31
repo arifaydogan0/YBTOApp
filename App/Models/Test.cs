@@ -75,11 +75,47 @@ namespace App.Models
                 LastName = "Çömlekli",
                 Gender = "Kadın",
                 BloodGroup = "A rh+",
-                BirthDate = new(1957, 11, 21),
+                BirthDate = new(1982, 11, 21),
                 CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
                 CurrentTemperature = new(){TemperatureValue = 36.6},
                 CurrentPulse = new() {PulseValue = 67},
                 CurrentSaturation = new(){SaturationValue = 0.97}
+            },
+            new()
+            {
+                Name = "Jack",
+                LastName = "Daniels",
+                Gender = "Kadın",
+                BloodGroup = "0 rh+",
+                BirthDate = new(1979, 11, 21),
+                CurrentBloodPressure = new(){SistolikValue = 121, DiastolikValue = 85},
+                CurrentTemperature = new(){TemperatureValue = 37.6},
+                CurrentPulse = new() {PulseValue = 67},
+                CurrentSaturation = new(){SaturationValue = 0.96}
+            },
+            new()
+            {
+                Name = "Can",
+                LastName = "Yılmaz",
+                Gender = "Erkek",
+                BloodGroup = "AB rh+",
+                BirthDate = new(1969, 11, 21),
+                CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
+                CurrentTemperature = new(){TemperatureValue = 36.6},
+                CurrentPulse = new() {PulseValue = 67},
+                CurrentSaturation = new(){SaturationValue = 0.96}
+            },
+            new()
+            {
+                Name = "Ziya",
+                LastName = "Seferoğlu",
+                Gender = "Erkek",
+                BloodGroup = "A rh-",
+                BirthDate = new(1949, 11, 21),
+                CurrentBloodPressure = new(){SistolikValue = 118, DiastolikValue = 85},
+                CurrentTemperature = new(){TemperatureValue = 36.6},
+                CurrentPulse = new() {PulseValue = 67},
+                CurrentSaturation = new(){SaturationValue = 0.966}
             },
             new()
             {

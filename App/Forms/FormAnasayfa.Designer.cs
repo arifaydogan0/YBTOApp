@@ -115,7 +115,7 @@
             this.Column7,
             this.Column8});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -123,6 +123,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewHastaListesi.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewHastaListesi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewHastaListesi.GridColor = System.Drawing.Color.White;
             this.dataGridViewHastaListesi.Location = new System.Drawing.Point(3, 28);
             this.dataGridViewHastaListesi.Name = "dataGridViewHastaListesi";
             this.dataGridViewHastaListesi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;

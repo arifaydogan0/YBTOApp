@@ -55,8 +55,8 @@ namespace App.Forms
                 var currentSaturation = Test.hastalar[i].CurrentSaturation;
                 if (currentSaturation != null)
                 {
-                    var saturation = (int)(currentSaturation.SaturationValue * 100);
-                    currentSaturation.SaturationValue = (double)random.Next(saturation - 1, saturation + 2) / 100;
+                    var saturation = (int)(currentSaturation.SaturationValue * 1000);
+                    currentSaturation.SaturationValue = (double)random.Next(saturation - 1, saturation + 2) / 1000;
                 }
 
                 var currentTemperature = Test.hastalar[i].CurrentTemperature;
