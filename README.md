@@ -6,11 +6,10 @@
   Sağlık personelinin organizasyonunu kolaylaştıran bu proje özellikle afet,salgın, zincirleme kazalar gibi ani gelişen durumlarda personel yetersizlik ve plansızlığı sebebiyle artan can kaybını azaltmayı amaçlamıştır.
 
 
-#
-https://user-images.githubusercontent.com/96810885/215689646-302fc46d-2f8e-48af-b923-600e29f54bbf.mp4
 
 
-<br><br><br><br>
+
+<br>
 #
 ![2023-01-31 09-48-14_Moment(2)](https://user-images.githubusercontent.com/96810885/215691274-6c45a3c7-8778-455f-bb01-aced40fea5d8.jpg)
 #
